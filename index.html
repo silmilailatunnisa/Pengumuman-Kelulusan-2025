@@ -1,25 +1,30 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Pengumuman Kelulusan - SMKS Darul Jannah</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Pengumuman Kelulusan SMKS Darul Jannah</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <img src="logo.png" alt="Logo Sekolah" class="logo"/>
-        <h1>Pengumuman Kelulusan</h1>
-        <p>Tahun Pelajaran 2024/2025</p>
+        <img src="logo.png" alt="Logo Sekolah" class="logo">
+        <h1>Pengumuman Kelulusan SMKS Darul Jannah<br>Tahun Pelajaran 2024/2025</h1>
+        
         <form id="form">
-            <input type="text" id="name" placeholder="Nama Lengkap" required />
-            <input type="date" id="birthdate" placeholder="Tanggal Lahir" required />
-            <input type="text" id="captcha" placeholder="Tulis: LULUS" required />
+            <input type="text" id="nama" placeholder="Nama Lengkap" required>
+            <input type="date" id="tanggal" required>
+            
+            <div class="captcha-container">
+                <span id="captcha-code"></span>
+                <button type="button" onclick="generateCaptcha()" class="reload">⟳</button>
+            </div>
+            <input type="text" id="captcha-input" placeholder="Masukkan CAPTCHA" required>
             <button type="submit">Cek Kelulusan</button>
         </form>
-        <div id="result" class="result"></div>
+
+        <div id="hasil" class="hasil"></div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
