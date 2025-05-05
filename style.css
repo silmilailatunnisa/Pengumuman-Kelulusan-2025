@@ -1,0 +1,46 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.container {
+    max-width: 400px;
+    margin: 80px auto;
+    background: rgba(0,0,0,0.7);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: none;
+}
+button {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+.success {
+    color: #00FF00;
+    font-weight: bold;
+}
+.fail {
+    color: red;
+    font-weight: bold;
+}
